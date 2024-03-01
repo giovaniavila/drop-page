@@ -1,0 +1,68 @@
+@import url(../../index.css);
+@media (max-width: 1200px) {
+  .header-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 550px);
+    gap: 0px;
+  }
+  .header-grid-conteudo {
+    height: 400px;
+  }
+  .header-grid-gifArea {
+    grid-row: 2;
+  }
+}
+@media (max-width: 757px) {
+  .header-grid {
+    margin-top: 4%;
+  }
+  .header-botoes button {
+    display: none;
+  }
+  .menu-hamburguer {
+    display: block;
+  }
+  .header-grid-conteudo {
+    height: 500px;
+  }
+  .header-footer h2 {
+    font-size: 27px;
+  }
+  .header-footer p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 600px) {
+  .header-grid {
+    grid-template-rows: 1fr;
+  }
+  .header-grid-gifArea {
+    display: none;
+  }
+  .header-grid-conteudo {
+    height: 600px;
+  }
+}
+@media (max-width: 480px) {
+  .header-grid-botaoGratuito {
+    font-size: 10px;
+    height: 10%;
+  }
+  .header-grid-gifArea {
+    display: none;
+  }
+  .header-grid-conteudo {
+    height: 600px;
+  }
+}
+@media (max-width: 400px) {
+  .header-grid-gifArea {
+    display: none;
+  }
+  .header-grid-conteudo {
+    height: 850px;
+  }
+}
+
+/*# sourceMappingURL=mediaHeader.css.map */

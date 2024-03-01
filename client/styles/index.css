@@ -1,0 +1,38 @@
+@import url(./layout/header.css);
+:root {
+  --cor-destaque: #3984ff;
+  --cor-botao-comecar: #005ef7;
+  --cor-destaque-secundaria: #b4dc19;
+  --cor-segundaria-branca: #ffffff;
+  --cor-secundaria-cinzaEscuro: #1e1919;
+  --cor-secundaria-cinzaClaro: #2c292a;
+  --cor-preto-footer: #000000;
+  --cor-subtexto: #a8a8a8;
+  --fonte-titulo: "Montserrat", sans-serif;
+  --fonte-corpo: "Lato", sans-serif;
+}
+
+body {
+  font-family: var(--fonte-corpo);
+  margin: 0px;
+  padding-top: 70px;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--fonte-titulo);
+  word-wrap: break-word;
+}
+
+p {
+  word-wrap: break-word;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*# sourceMappingURL=index.css.map */
