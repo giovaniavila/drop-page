@@ -107,6 +107,36 @@
   align-items: baseline;
 }
 
+.equipesDropbox {
+  display: grid;
+  place-content: center;
+  background-color: #1e1919;
+}
+.equipesDropbox .equipesDropbox-content {
+  padding: 59px 0px;
+  display: grid;
+}
+.equipesDropbox .equipesDropbox-content h1 {
+  color: white;
+  font-size: 38px;
+  font-family: var(--fonte-titulo);
+  font-weight: 500;
+}
+.equipesDropbox .equipesDropbox-content button {
+  justify-self: center;
+  margin-top: 30px;
+  display: flex;
+  color: white;
+  font-size: 16px;
+}
+.equipesDropbox .equipesDropbox-content p {
+  font-weight: 600;
+  border-bottom: 1px solid #a09d9b;
+}
+.equipesDropbox .equipesDropbox-content p:hover {
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+
 @media (max-width: 1000px) {
   .main-grid-content-planos {
     grid-template-columns: 1fr !important;
