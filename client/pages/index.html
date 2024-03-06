@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Drop Page</title>
-    <link rel="stylesheet" href="../assets/styles/index.css" />
+    <link rel="stylesheet" href="../styles/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,6 +20,7 @@
     />
   </head>
   <body>
+    <script src="../../js/apagar.js"></script>
     <header>
       <div id="header-placeholder"></div>
       <script>
@@ -28,7 +29,14 @@
         });
       </script>
     </header>
-    <main></main>
-    <script src="../../js/apagar.js"></script>
+    <main>
+      <div id="main-placeholder"></div>
+      <script>
+        $(function () {
+          $("#main-placeholder").load("./main.html");
+        });
+      </script>
+    </main>
+    <footer></footer>
   </body>
 </html>

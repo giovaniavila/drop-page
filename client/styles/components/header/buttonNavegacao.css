@@ -1,0 +1,50 @@
+@import "../../index.css";
+.header-botoes {
+  display: flex;
+  gap: 16px 27px;
+}
+.header-botoes .header-botao-registrar {
+  font-size: 14px;
+  background: none;
+  border: none;
+}
+.header-botoes .header-botao-registrar h1 {
+  font-weight: 400;
+}
+.header-botoes .header-botao-registrar:hover {
+  color: var(--cor-botao-comecar);
+  cursor: pointer;
+}
+.header-botoes .header-botao-comecarAgora {
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  background-image: linear-gradient(135deg, #0148bb, #024dc7);
+  border-radius: 4px;
+  color: white;
+  border: none;
+  height: 43px;
+  padding: 0px 12px;
+  margin-right: 40px;
+}
+.header-botoes .header-botao-comecarAgora:hover {
+  background-image: linear-gradient(135deg, #004dc9, #023586);
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.header-botoes .header-foto {
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  border: none;
+  align-self: center;
+  background-color: #013486;
+}
+.header-botoes .header-foto:hover {
+  cursor: pointer;
+  background-color: var(--cor-botao-comecar);
+  transition: 0.6s;
+}
+
+/*# sourceMappingURL=buttonNavegacao.css.map */

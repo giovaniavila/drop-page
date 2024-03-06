@@ -1,5 +1,5 @@
-@import url(../components/header/buttonNavegacao.scss);
-@import url(../index.css);
+@import url(../components/header/buttonNavegacao.css);
+@import url(../../styles/index.css);
 @import url(../../assets/icons/menu-hamburguer.svg);
 @import url(../@media/header/mediaHeader.scss);
 
@@ -195,7 +195,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 433px) {
   .header-grid-gifArea {
     display: none;
   }
