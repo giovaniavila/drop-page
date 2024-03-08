@@ -1,0 +1,67 @@
+.footer{
+    display: grid;
+    justify-content: center;
+    background-color: #000000;
+    color: white;
+    height: 700px;
+    .footer-content{
+        height: auto;
+        display: flex;
+        gap: 130px;
+        padding-top: 60px;
+        align-content: center;
+            dt{
+               font-size: 20px;
+               cursor: pointer;
+            }
+            dd{
+                font-size: 16px;
+            }
+            img{
+                margin-left: 5px;
+            }
+            
+    } 
+}
+
+#footer-content-ddEscondido{
+    display: none;
+    &.ativo{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: absolute;
+        margin-top: 20px;
+        dd{
+            color: rgb(209, 209, 209);
+            text-align: start;
+            &:hover{
+                color: white;
+                cursor: pointer;
+                text-decoration: underline rgb(255, 255, 255); /* Espessura de 3px e espaçamento de 2px */
+                text-decoration-skip: 20px;
+            }
+        }
+    }
+}
+
+.footer-iconsLink{
+    padding-top: 300px;
+    .footer-iconsLink-social{
+        display: flex;
+        gap: 20px;
+        align-content: center;
+        img{
+            cursor: pointer;
+            transition: .3s ease-in-out;
+            &:hover{
+                transform: translateY(-10px);
+            }
+        }
+    }
+}
+
+#icon {
+    transition: transform 0.3s ease; 
+  }
+  

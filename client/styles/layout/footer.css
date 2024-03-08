@@ -1,0 +1,68 @@
+@charset "UTF-8";
+.footer {
+  display: grid;
+  justify-content: center;
+  background-color: #000000;
+  color: white;
+  height: 700px;
+}
+.footer .footer-content {
+  height: auto;
+  display: flex;
+  gap: 130px;
+  padding-top: 60px;
+  align-content: center;
+}
+.footer .footer-content dt {
+  font-size: 20px;
+  cursor: pointer;
+}
+.footer .footer-content dd {
+  font-size: 16px;
+}
+.footer .footer-content img {
+  margin-left: 5px;
+}
+
+#footer-content-ddEscondido {
+  display: none;
+}
+#footer-content-ddEscondido.ativo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  margin-top: 20px;
+}
+#footer-content-ddEscondido.ativo dd {
+  color: rgb(209, 209, 209);
+  text-align: start;
+}
+#footer-content-ddEscondido.ativo dd:hover {
+  color: white;
+  cursor: pointer;
+  text-decoration: underline rgb(255, 255, 255); /* Espessura de 3px e espaçamento de 2px */
+  text-decoration-skip: 20px;
+}
+
+.footer-iconsLink {
+  padding-top: 300px;
+}
+.footer-iconsLink .footer-iconsLink-social {
+  display: flex;
+  gap: 20px;
+  align-content: center;
+}
+.footer-iconsLink .footer-iconsLink-social img {
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.footer-iconsLink .footer-iconsLink-social img:hover {
+  transform: translateY(-10px);
+}
+
+#icon {
+  transition: transform 0.3s ease;
+}
+
+/*# sourceMappingURL=footer.css.map */
