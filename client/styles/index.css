@@ -19,6 +19,7 @@ body {
   margin: 0px;
   padding-top: 70px;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 h1,
@@ -35,6 +36,11 @@ p {
 * {
   margin: 0px;
   padding: 0px;
+}
+
+html {
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=index.css.map */

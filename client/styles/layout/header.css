@@ -185,12 +185,36 @@ img {
     height: 600px;
   }
 }
-@media (max-width: 433px) {
-  .header-grid-gifArea {
-    display: none;
+/* Iphone 14 pro max */
+@media (max-width: 430px) {
+  .header-grid {
+    display: grid;
+    grid-template-columns: 1fr;
   }
-  .header-grid-conteudo {
-    height: 850px;
+  .header-grid .header-grid-conteudo {
+    height: 500px;
+  }
+  .header-grid .header-grid-conteudo h1 {
+    font-size: 30px;
+  }
+  .header-grid .header-grid-conteudo p {
+    font-size: 15px;
+  }
+  .header-grid .header-grid-botaoGratuito {
+    font-size: 12px;
+    padding: 10px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+  .header-footer h2 {
+    font-size: 24px;
+  }
+  .header-footer p {
+    font-size: 13px;
+  }
+  .header-footer .header-footer-content {
+    width: 90%;
   }
 }
 
