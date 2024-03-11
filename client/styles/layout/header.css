@@ -6,6 +6,10 @@
   display: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 .navegacao-header {
   display: flex;
   justify-content: space-between;
