@@ -46,7 +46,10 @@
 }
 
 .footer-iconsLink{
-    padding-top: 300px;
+    padding-top: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
     .footer-iconsLink-social{
         display: flex;
         gap: 20px;
@@ -59,6 +62,27 @@
             }
         }
     }
+    .footer-detalhe{
+        display: block;
+        width: 10%;
+        height: .8px;
+        background-color: #6e6e6e;
+    }
+    .footer-language{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        button{
+           all: unset;
+           font-size: 17px;
+           margin-left: 3px;
+           &:hover{
+            cursor: pointer;
+            text-decoration: underline 1px solid rgb(255, 255, 255);
+           }
+        }
+    }
+
 }
 
 #icon {
