@@ -79,12 +79,12 @@
             align-self: center;
             margin-top: 60px;
             padding: 40px 60px;
-            width: 1400px;
             .apoioDropbox-titulo{
+                margin-top: 10px;
                 text-align: center;
                 font-size: 31px;
                 font-weight: 400;
-                margin-bottom: 80px;
+                margin-bottom: 90px;
             }
             .apoioDropbox-descricao{
                 display: flex;
@@ -266,4 +266,39 @@
         grid-template-columns: 1fr !important;
         width: 80vw;
     }
+    .apoioDropbox{
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 100vw;
+        .apoioDropbox-content{
+            display: grid;
+            grid-template-columns: 1fr;
+            .apoioDropbox-titulo{
+                font-size: 20px;
+            }
+            .apoioDropbox-descricao{
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+                margin-bottom: 30px;
+                p{
+                    font-size: 15px;
+                    max-width: 100%;
+                }
+                h2{
+                    font-size: 20px;
+                    text-align: start;
+                    margin-bottom: 5px;
+                }
+                img{
+                    grid-row: 2;
+                }
+                .apoioDropbox-descricao-responsive{
+                    display: flex;
+                    gap: 20px;
+                }
+            }
+        }
+    }
+
 }
