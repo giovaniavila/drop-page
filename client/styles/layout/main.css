@@ -509,11 +509,33 @@
 }
 /* desktop */
 @media screen and (min-width: 800px) and (max-width: 1200px) {
-  .main-grid-content {
-    padding: 40px;
+  .main-grid .main-grid-content .main-grid-content-checkbox {
+    font-size: 14px;
+    max-width: 100%;
+    gap: 15px;
+    justify-content: start;
   }
-  .main-grid-content .main-grid-content-planos .main-grid-planos-cardUm, .main-grid-content .main-grid-content-planos .main-grid-planos-cardDois, .main-grid-content .main-grid-content-planos .main-grid-planos-cardTres {
+  .main-grid .main-grid-content .main-grid-content-planos {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 80vw;
     height: auto;
+    padding: 15px;
+    gap: 30px;
+  }
+  .main-grid .main-grid-content .main-grid-content-planos .main-grid-planos-cardUm, .main-grid .main-grid-content .main-grid-content-planos .main-grid-planos-cardDois, .main-grid .main-grid-content .main-grid-content-planos .main-grid-planos-cardTres {
+    place-content: center;
+    height: auto;
+  }
+  .main-grid .main-grid-content .main-grid-content-planos .main-grid-planos-cardUm p, .main-grid .main-grid-content .main-grid-content-planos .main-grid-planos-cardDois p, .main-grid .main-grid-content .main-grid-content-planos .main-grid-planos-cardTres p {
+    font-size: 14px;
+  }
+  .main-grid .main-grid-content .main-grid-content-planos .main-grid-planos-cardUm .botaoAzulMenor, .main-grid .main-grid-content .main-grid-content-planos .main-grid-planos-cardDois .botaoAzulMenor, .main-grid .main-grid-content .main-grid-content-planos .main-grid-planos-cardTres .botaoAzulMenor {
+    padding: 10px;
+    align-items: center;
+  }
+  .main-grid .main-grid-content .main-grid-content-planos .main-grid-planos-cardUm .botaoAzulMenor p, .main-grid .main-grid-content .main-grid-content-planos .main-grid-planos-cardDois .botaoAzulMenor p, .main-grid .main-grid-content .main-grid-content-planos .main-grid-planos-cardTres .botaoAzulMenor p {
+    font-size: 13px;
   }
   .carosel .carosel-content {
     grid-template-columns: repeat(4, auto);

@@ -532,11 +532,35 @@
 
 /* desktop */
 @media screen and (min-width: 800px) and (max-width: 1200px) {
-    .main-grid-content{
-        padding: 40px;
-        .main-grid-content-planos{
-            .main-grid-planos-cardUm, .main-grid-planos-cardDois, .main-grid-planos-cardTres{
+    .main-grid{
+        .main-grid-content{
+            .main-grid-content-checkbox{
+                font-size: 14px;
+                max-width: 100%;
+                gap: 15px;
+                justify-content: start;
+            }
+            .main-grid-content-planos {
+                display: grid;
+                grid-template-columns: 1fr;
+                width: 80vw;
                 height: auto;
+                padding: 15px;
+                gap: 30px;
+                .main-grid-planos-cardUm, .main-grid-planos-cardDois, .main-grid-planos-cardTres{
+                    p{
+                        font-size: 14px;
+                    }
+                    place-content: center;
+                    height: auto;
+                    .botaoAzulMenor{
+                       padding: 10px;
+                       align-items: center;
+                       p{
+                        font-size: 13px;
+                       }
+                    }
+                }
             }
         }
     }
