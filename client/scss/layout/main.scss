@@ -142,6 +142,10 @@
     background-color: #242121;
     display: grid;
     place-content: center;
+    .carosel-arrowLeft,
+    .carosel-arrowRight {
+            opacity: 0;
+    }
     .carosel-content{
         padding: 70px;
         display: grid;
@@ -149,14 +153,61 @@
         grid-template-columns: 100px 1fr 2fr 100px;
         place-self: center;
         max-width: 70%;
-        .carosel-background-logoUm{
+        &:hover{
+            .carosel-arrowLeft,
+            .carosel-arrowRight {
+             opacity: 1;
+        }
+        .carosel-arrowLeft{
+            place-self: center;
+            &:hover{
+                fill: red;
+                cursor: pointer;
+                transform: translateX(-15px);
+                transition: transform 0.5s ease-in-out;
+            }
+        }
+        .carosel-arrowRight{
+            place-self: center;
+            &:hover{
+                cursor: pointer;
+                transform: translateX(15px);
+                transition: transform 0.5s ease-in-out;
+            }
+        }
+        }
+        .carosel-background-logoUm, .carosel-background-logoDois, .carosel-background-logoTres, .carosel-background-logoQuatro,.carosel-background-logoCinco,
+        .carosel-background-logoSeis, .carosel-background-logoSete, .carosel-background-logoOito{
             display: grid;
             height: 337px;
             width: 337px;
-            background-color: red;
             img{
                 place-self: center;
             }
+        }
+        #carosel-backgroundColor-logoUm{
+            background-color: #b4dc19;
+        }
+        #carosel-backgroundColor-logoDois{
+            background-color: #9b0032;
+        }
+        #carosel-backgroundColor-logoTres{
+            background-color: #9b0032;
+        }
+        #carosel-backgroundColor-logoQuatro{
+            background-color: #b4c8e1;
+        }
+        #carosel-backgroundColor-logoCinco{
+            background-color: #14c8eb;
+        }
+        #carosel-backgroundColor-logoSeis{
+            background-color: #fa551e;
+        }
+        #carosel-backgroundColor-logoSete{
+            background-color: #283750;
+        }
+        #carosel-backgroundColor-logoOito{
+            background-color: #fad24b;
         }
         .carosel-text{
             color: white;
@@ -192,9 +243,14 @@
                 }
             }
         }
-        .carosel-arrowLeft, .carosel-arrowRight{
-            cursor: pointer;
+        .carosel-arrowLeft{
             place-self: center;
+            &:hover{
+                fill: red;
+                cursor: pointer;
+                transform: translateX(-20px);
+                transition: transform .4s ease-in-out;
+            }
         }
     }
 }

@@ -143,6 +143,10 @@
   display: grid;
   place-content: center;
 }
+.carosel .carosel-arrowLeft,
+.carosel .carosel-arrowRight {
+  opacity: 0;
+}
 .carosel .carosel-content {
   padding: 70px;
   display: grid;
@@ -151,14 +155,60 @@
   place-self: center;
   max-width: 70%;
 }
-.carosel .carosel-content .carosel-background-logoUm {
+.carosel .carosel-content:hover .carosel-arrowLeft,
+.carosel .carosel-content:hover .carosel-arrowRight {
+  opacity: 1;
+}
+.carosel .carosel-content:hover .carosel-arrowLeft {
+  place-self: center;
+}
+.carosel .carosel-content:hover .carosel-arrowLeft:hover {
+  fill: red;
+  cursor: pointer;
+  transform: translateX(-15px);
+  transition: transform 0.5s ease-in-out;
+}
+.carosel .carosel-content:hover .carosel-arrowRight {
+  place-self: center;
+}
+.carosel .carosel-content:hover .carosel-arrowRight:hover {
+  cursor: pointer;
+  transform: translateX(15px);
+  transition: transform 0.5s ease-in-out;
+}
+.carosel .carosel-content .carosel-background-logoUm, .carosel .carosel-content .carosel-background-logoDois, .carosel .carosel-content .carosel-background-logoTres, .carosel .carosel-content .carosel-background-logoQuatro, .carosel .carosel-content .carosel-background-logoCinco,
+.carosel .carosel-content .carosel-background-logoSeis, .carosel .carosel-content .carosel-background-logoSete, .carosel .carosel-content .carosel-background-logoOito {
   display: grid;
   height: 337px;
   width: 337px;
-  background-color: red;
 }
-.carosel .carosel-content .carosel-background-logoUm img {
+.carosel .carosel-content .carosel-background-logoUm img, .carosel .carosel-content .carosel-background-logoDois img, .carosel .carosel-content .carosel-background-logoTres img, .carosel .carosel-content .carosel-background-logoQuatro img, .carosel .carosel-content .carosel-background-logoCinco img,
+.carosel .carosel-content .carosel-background-logoSeis img, .carosel .carosel-content .carosel-background-logoSete img, .carosel .carosel-content .carosel-background-logoOito img {
   place-self: center;
+}
+.carosel .carosel-content #carosel-backgroundColor-logoUm {
+  background-color: #b4dc19;
+}
+.carosel .carosel-content #carosel-backgroundColor-logoDois {
+  background-color: #9b0032;
+}
+.carosel .carosel-content #carosel-backgroundColor-logoTres {
+  background-color: #9b0032;
+}
+.carosel .carosel-content #carosel-backgroundColor-logoQuatro {
+  background-color: #b4c8e1;
+}
+.carosel .carosel-content #carosel-backgroundColor-logoCinco {
+  background-color: #14c8eb;
+}
+.carosel .carosel-content #carosel-backgroundColor-logoSeis {
+  background-color: #fa551e;
+}
+.carosel .carosel-content #carosel-backgroundColor-logoSete {
+  background-color: #283750;
+}
+.carosel .carosel-content #carosel-backgroundColor-logoOito {
+  background-color: #fad24b;
 }
 .carosel .carosel-content .carosel-text {
   color: white;
@@ -194,9 +244,14 @@
 .carosel .carosel-content .carosel-text .carosel-autorText .carosel-autorText-about {
   color: #a09d9b;
 }
-.carosel .carosel-content .carosel-arrowLeft, .carosel .carosel-content .carosel-arrowRight {
-  cursor: pointer;
+.carosel .carosel-content .carosel-arrowLeft {
   place-self: center;
+}
+.carosel .carosel-content .carosel-arrowLeft:hover {
+  fill: red;
+  cursor: pointer;
+  transform: translateX(-20px);
+  transition: transform 0.4s ease-in-out;
 }
 
 .main-tiposdeUso {

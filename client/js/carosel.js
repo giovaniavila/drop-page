@@ -14,7 +14,7 @@ function showItem(index) {
 
 function showNextItem() {
     currentItem++;
-    if (currentItem > items.length) {
+    if (currentItem >= items.length) {
         currentItem = 0;
     }
     console.log('Next Item:', currentItem);
@@ -31,8 +31,16 @@ function showPrevItem() {
 }
 
 
-document.querySelector('.carosel-arrowLeft').addEventListener('click', showPrevItem);
-document.querySelector('.carosel-arrowRight').addEventListener('click', showNextItem);
+document.addEventListener('click', (event) => {
+    if (event.target.classList.contains('carosel-arrowLeft')) {
+        console.log('Left arrow clicked');
+        showPrevItem();
+    } else if (event.target.classList.contains('carosel-arrowRight')) {
+        console.log('Right arrow clicked');
+        showNextItem();
+    }
+});
+
 
 // Iniciar escondendo todos os itens e mostrando o primeiro\
 hideAllItems();
