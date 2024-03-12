@@ -180,11 +180,11 @@
 .carosel .carosel-content .carosel-background-logoSeis, .carosel .carosel-content .carosel-background-logoSete, .carosel .carosel-content .carosel-background-logoOito {
   display: grid;
   height: 337px;
-  width: 337px;
 }
 .carosel .carosel-content .carosel-background-logoUm img, .carosel .carosel-content .carosel-background-logoDois img, .carosel .carosel-content .carosel-background-logoTres img, .carosel .carosel-content .carosel-background-logoQuatro img, .carosel .carosel-content .carosel-background-logoCinco img,
 .carosel .carosel-content .carosel-background-logoSeis img, .carosel .carosel-content .carosel-background-logoSete img, .carosel .carosel-content .carosel-background-logoOito img {
   place-self: center;
+  max-width: 100%;
 }
 .carosel .carosel-content #carosel-backgroundColor-logoUm {
   background-color: #b4dc19;
@@ -384,6 +384,27 @@
   }
   #main-tiposdeUso-titleFooter {
     font-size: 25px;
+  }
+  .carosel .carosel-content {
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(auto);
+  }
+  .carosel .carosel-content .carosel-arrowLeft {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  .carosel .carosel-content .carosel-arrowRight {
+    grid-column: 2;
+    grid-row: 4;
+  }
+  .carosel .carosel-content .carosel-background-logoUm, .carosel .carosel-content .carosel-background-logoDois, .carosel .carosel-content .carosel-background-logoTres, .carosel .carosel-content .carosel-background-logoQuatro, .carosel .carosel-content .carosel-background-logoCinco,
+  .carosel .carosel-content .carosel-background-logoSeis, .carosel .carosel-content .carosel-background-logoSete, .carosel .carosel-content .carosel-background-logoOito {
+    grid-column: 1;
+    grid-column: 1/3;
+  }
+  .carosel .carosel-content .carosel-text {
+    grid-column: 1;
+    grid-column: 1/3;
   }
 }
 /* desktop */

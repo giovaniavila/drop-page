@@ -180,9 +180,9 @@
         .carosel-background-logoSeis, .carosel-background-logoSete, .carosel-background-logoOito{
             display: grid;
             height: 337px;
-            width: 337px;
             img{
                 place-self: center;
+                max-width: 100%;
             }
         }
         #carosel-backgroundColor-logoUm{
@@ -402,6 +402,29 @@
     }
     #main-tiposdeUso-titleFooter{
         font-size: 25px;
+    }
+    .carosel{
+        .carosel-content{
+            grid-template-columns: repeat(2, 150px);
+            grid-template-rows: repeat(auto);
+            .carosel-arrowLeft{
+                grid-column: 1;
+                grid-row: 4;
+            }
+            .carosel-arrowRight{
+                grid-column: 2;
+                grid-row: 4;
+            }
+            .carosel-background-logoUm, .carosel-background-logoDois, .carosel-background-logoTres, .carosel-background-logoQuatro,.carosel-background-logoCinco,
+            .carosel-background-logoSeis, .carosel-background-logoSete, .carosel-background-logoOito{
+                grid-column: 1;
+                grid-column: 1 / 3;
+        }
+        .carosel-text{
+            grid-column: 1;
+            grid-column: 1/ 3 ;
+        }
+        }
     }
 }
 
