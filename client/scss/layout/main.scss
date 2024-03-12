@@ -78,8 +78,7 @@
         place-content: center;
         .apoioDropbox-content{
             align-self: center;
-            margin-top: 60px;
-            padding: 40px 60px;
+            padding: 80px;
             .apoioDropbox-titulo{
                 margin-top: 10px;
                 text-align: center;
@@ -91,14 +90,16 @@
                 display: flex;
                 flex-wrap: nowrap;
                 justify-content: center;
-                gap: 30px;
+                gap: 40px;
                 p{
                     max-width: 250px;
                     line-height: 25px;
+                    font-size: 15px;
                 }
                 h2{
                     font-size: 20px;
-                    text-align: center;
+                    text-align: start;
+                    margin-bottom: 10px;
                 }
                 img{
                     margin-bottom: 20px;
@@ -318,66 +319,68 @@
 }
 
 /* Iphone 14 pro max */
-@media(max-width: 430px){
+@media(max-width: 500px){
     .main-grid{
         .main-grid-content{
             .main-grid-content-checkbox{
                 font-size: 14px;
                 max-width: 100%;
                 gap: 15px;
+                justify-content: center;
             }
-        }
-        .main-grid-content-planos{
-            gap: 10px;
-            .main-grid-planos-cardUm, .main-grid-planos-cardDois, .main-grid-planos-cardTres{
-                padding: 15px !important;
-                .botaoSublinhado{
-                    padding: 0px;
-                }
-                height: auto !important;
-                h1{
-                    font-size: 27px !important;
-                }
-                button{
-                    padding: 13px;
-                    font-size: 14px;
-                    display: flex;
-                    align-items: center;
-                    width: 100%;
-                }
-                p{
-                    font-size: 14px;
-                    width: 100%;
+            .main-grid-content-planos {
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                padding: 15px;
+                gap: 30px;
+                .main-grid-planos-cardUm, .main-grid-planos-cardDois, .main-grid-planos-cardTres{
+                    p{
+                        font-size: 14px;
+                    }
+                    place-self: center;
+                    height: auto;
+                    .botaoAzulMenor{
+                       padding: 10px;
+                       align-items: center;
+                       p{
+                        font-size: 13px;
+                       }
+                    }
                 }
             }
-           
         }
     }
     .apoioDropbox{
         .apoioDropbox-content{
-            h1{
+            display: grid;
+            grid-template-columns: 1fr;
+            max-width: 100%;
+            .apoioDropbox-titulo{
                 font-size: 20px;
-                text-align: center;
-                text-shadow: 1px 1px 1px rgba(138, 138, 138, 0.2);
-                text-transform: uppercase;
-                letter-spacing: 1px;
-                line-height: 1.5;
             }
             .apoioDropbox-descricao{
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+                margin-bottom: 30px;
+                width: 80vw;
+                p{
+                    font-size: 14px;
+                    max-width: 100%;
+                }
+                h2{
+                    font-size: 14px;
+                    text-align: start;
+                    margin-bottom: 5px;
+                }
+                img{
+                    grid-row: 2;
+                    max-width: 30%;
+                }
                 .apoioDropbox-descricao-responsive{
-                    p{
-                        font-size: 14px;
-                        max-width: 100%;
-                    }
-                    h2{
-                        font-size: 20px;
-                        max-width: 100%;
-                    }
-                    img{
-                        max-width: 10%;
-                        display: grid;
-                        align-self: start;
-                    }
+                    display: flex;
+                    gap: 20px;
                 }
             }
         }
@@ -395,13 +398,27 @@
         }
     }
     .main-tiposdeUso{
-        button{
-            height: 20px;
-            font-size: 12px;
+        .main-tiposdeUso-content{
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            place-self: center;
+            padding: 40px 15px;
+            .botaoAzulMaior{
+                font-size: 14px;
+            }
+            #main-tiposdeUso-botaoGratuito{
+                padding: 10px;
+                font-size: 14px;
+            }
         }
     }
     #main-tiposdeUso-titleFooter{
-        font-size: 25px;
+        place-self: start;
+        padding: 0px;
+    }
+    #main-tiposdeUso-botaoGratuito{
+        place-self: start;
     }
     .carosel{
         .carosel-content{
@@ -428,8 +445,8 @@
     }
 }
 
-/* desktop */
-@media(max-width: 800px){
+/* tablet */
+@media screen and (min-width: 500px) and (max-width: 800px){
     .main-grid-content-planos {
         grid-template-columns: 1fr !important;
         width: 80vw;
@@ -489,5 +506,59 @@
     }
     #main-tiposdeUso-botaoGratuito{
         place-self: start;
+    }
+    .carosel{
+        .carosel-content{
+            grid-template-columns: repeat(4, auto);
+            .carosel-arrowLeft{
+                grid-column: 1;
+            }
+            .carosel-arrowRight{
+                grid-column: 4;
+                grid-row: 1;
+            }
+            .carosel-background-logoUm, .carosel-background-logoDois, .carosel-background-logoTres, .carosel-background-logoQuatro,.carosel-background-logoCinco,
+            .carosel-background-logoSeis, .carosel-background-logoSete, .carosel-background-logoOito{
+                grid-column: 2;
+                grid-column: 2 / 4;
+        }
+        .carosel-text{
+            grid-column: 1;
+            grid-column: 2/ 4 ;
+        }
+        }
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+    .main-grid-content{
+        padding: 40px;
+        .main-grid-content-planos{
+            .main-grid-planos-cardUm, .main-grid-planos-cardDois, .main-grid-planos-cardTres{
+                height: auto;
+            }
+        }
+    }
+    .carosel{
+        .carosel-content{
+            grid-template-columns: repeat(4, auto);
+            .carosel-arrowLeft{
+                grid-column: 1;
+            }
+            .carosel-arrowRight{
+                grid-column: 4;
+                grid-row: 1;
+            }
+            .carosel-background-logoUm, .carosel-background-logoDois, .carosel-background-logoTres, .carosel-background-logoQuatro,.carosel-background-logoCinco,
+            .carosel-background-logoSeis, .carosel-background-logoSete, .carosel-background-logoOito{
+                grid-column: 2;
+                grid-column: 2 / 4;
+        }
+        .carosel-text{
+            grid-column: 1;
+            grid-column: 2/ 4 ;
+        }
+        }
     }
 }
