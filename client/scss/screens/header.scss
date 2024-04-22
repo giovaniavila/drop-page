@@ -1,0 +1,41 @@
+/* medium screen devices */
+@media (max-width: 900px) {
+  .header-grid-conteudo {
+    height: 600px;
+  }
+}
+
+/* small screen devices*/
+@media (max-width: 576px) {
+  .header-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    .header-grid-conteudo {
+      height: 500px;
+      h1 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 15px;
+      }
+    }
+    .header-grid-botaoGratuito {
+      font-size: 12px;
+      padding: 10px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+    }
+  }
+  .header-footer {
+    h2 {
+      font-size: 24px;
+    }
+    p {
+      font-size: 13px;
+    }
+    .header-footer-content {
+      width: 90%;
+    }
+  }
+}

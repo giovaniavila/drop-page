@@ -1,0 +1,276 @@
+/* small screens */
+@media (max-width: 576px) {
+  .main-grid .main-grid-content .main-grid-content-checkbox {
+    font-size: 14px;
+    max-width: 100%;
+    gap: 15px;
+    justify-content: center;
+  }
+  .main-grid .main-grid-content .main-grid-content-planos {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
+    gap: 30px;
+  }
+  .main-grid .main-grid-content .main-grid-content-planos .main-grid-planos-cardUm,
+  .main-grid .main-grid-content .main-grid-content-planos .main-grid-planos-cardDois,
+  .main-grid .main-grid-content .main-grid-content-planos .main-grid-planos-cardTres {
+    place-self: center;
+    height: auto;
+  }
+  .main-grid .main-grid-content .main-grid-content-planos .main-grid-planos-cardUm p,
+  .main-grid .main-grid-content .main-grid-content-planos .main-grid-planos-cardDois p,
+  .main-grid .main-grid-content .main-grid-content-planos .main-grid-planos-cardTres p {
+    font-size: 14px;
+  }
+  .main-grid .main-grid-content .main-grid-content-planos .main-grid-planos-cardUm .botaoAzulMenor,
+  .main-grid .main-grid-content .main-grid-content-planos .main-grid-planos-cardDois .botaoAzulMenor,
+  .main-grid .main-grid-content .main-grid-content-planos .main-grid-planos-cardTres .botaoAzulMenor {
+    padding: 10px;
+    align-items: center;
+  }
+  .main-grid .main-grid-content .main-grid-content-planos .main-grid-planos-cardUm .botaoAzulMenor p,
+  .main-grid .main-grid-content .main-grid-content-planos .main-grid-planos-cardDois .botaoAzulMenor p,
+  .main-grid .main-grid-content .main-grid-content-planos .main-grid-planos-cardTres .botaoAzulMenor p {
+    font-size: 13px;
+  }
+  .apoioDropbox .apoioDropbox-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+  .apoioDropbox .apoioDropbox-content .apoioDropbox-titulo {
+    font-size: 20px;
+  }
+  .apoioDropbox .apoioDropbox-content .apoioDropbox-descricao {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 30px;
+    width: 80vw;
+  }
+  .apoioDropbox .apoioDropbox-content .apoioDropbox-descricao p {
+    font-size: 14px;
+    max-width: 100%;
+  }
+  .apoioDropbox .apoioDropbox-content .apoioDropbox-descricao h2 {
+    font-size: 14px;
+    text-align: start;
+    margin-bottom: 5px;
+  }
+  .apoioDropbox .apoioDropbox-content .apoioDropbox-descricao img {
+    grid-row: 2;
+    max-width: 30%;
+  }
+  .apoioDropbox .apoioDropbox-content .apoioDropbox-descricao .apoioDropbox-descricao-responsive {
+    display: flex;
+    gap: 20px;
+  }
+  .equipesDropbox .equipesDropbox-content {
+    place-content: center;
+    padding: 30px;
+  }
+  .equipesDropbox .equipesDropbox-content h1 {
+    font-size: 17px !important;
+  }
+  .equipesDropbox .equipesDropbox-content p {
+    font-size: 14px;
+  }
+  .main-tiposdeUso .main-tiposdeUso-content {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    place-self: center;
+    padding: 40px 15px;
+  }
+  .main-tiposdeUso .main-tiposdeUso-content .botaoAzulMaior {
+    font-size: 14px;
+  }
+  .main-tiposdeUso .main-tiposdeUso-content #main-tiposdeUso-botaoGratuito {
+    padding: 10px;
+    font-size: 14px;
+  }
+  #main-tiposdeUso-titleFooter {
+    place-self: start;
+    padding: 0px;
+  }
+  #main-tiposdeUso-botaoGratuito {
+    place-self: start;
+  }
+  .carosel .carosel-content {
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(auto);
+  }
+  .carosel .carosel-content .carosel-arrowLeft {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  .carosel .carosel-content .carosel-arrowRight {
+    grid-column: 2;
+    grid-row: 4;
+  }
+  .carosel .carosel-content .carosel-background-logoUm,
+  .carosel .carosel-content .carosel-background-logoDois,
+  .carosel .carosel-content .carosel-background-logoTres,
+  .carosel .carosel-content .carosel-background-logoQuatro,
+  .carosel .carosel-content .carosel-background-logoCinco,
+  .carosel .carosel-content .carosel-background-logoSeis,
+  .carosel .carosel-content .carosel-background-logoSete,
+  .carosel .carosel-content .carosel-background-logoOito {
+    grid-column: 1;
+    grid-column: 1/3;
+  }
+  .carosel .carosel-content .carosel-text {
+    grid-column: 1;
+    grid-column: 1/3;
+  }
+}
+/* medium screens */
+@media screen and (min-width: 576px) and (max-width: 900px) {
+  .main-grid-content-planos {
+    grid-template-columns: 1fr !important;
+    width: 80vw;
+  }
+  .apoioDropbox {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 100vw;
+  }
+  .apoioDropbox .apoioDropbox-content {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .apoioDropbox .apoioDropbox-content .apoioDropbox-titulo {
+    font-size: 20px;
+  }
+  .apoioDropbox .apoioDropbox-content .apoioDropbox-descricao {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 30px;
+  }
+  .apoioDropbox .apoioDropbox-content .apoioDropbox-descricao p {
+    font-size: 15px;
+    max-width: 100%;
+  }
+  .apoioDropbox .apoioDropbox-content .apoioDropbox-descricao h2 {
+    font-size: 20px;
+    text-align: start;
+    margin-bottom: 5px;
+  }
+  .apoioDropbox .apoioDropbox-content .apoioDropbox-descricao img {
+    grid-row: 2;
+  }
+  .apoioDropbox .apoioDropbox-content .apoioDropbox-descricao .apoioDropbox-descricao-responsive {
+    display: flex;
+    gap: 20px;
+  }
+  .equipesDropbox .equipesDropbox-content h1 {
+    font-size: 27px;
+  }
+  .main-tiposdeUso .main-tiposdeUso-content {
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    place-self: center;
+  }
+  #main-tiposdeUso-titleFooter {
+    place-self: start;
+    padding: 0px;
+  }
+  #main-tiposdeUso-botaoGratuito {
+    place-self: start;
+  }
+  .carosel .carosel-content {
+    grid-template-columns: repeat(4, auto);
+  }
+  .carosel .carosel-content .carosel-arrowLeft {
+    grid-column: 1;
+  }
+  .carosel .carosel-content .carosel-arrowRight {
+    grid-column: 4;
+    grid-row: 1;
+  }
+  .carosel .carosel-content .carosel-background-logoUm,
+  .carosel .carosel-content .carosel-background-logoDois,
+  .carosel .carosel-content .carosel-background-logoTres,
+  .carosel .carosel-content .carosel-background-logoQuatro,
+  .carosel .carosel-content .carosel-background-logoCinco,
+  .carosel .carosel-content .carosel-background-logoSeis,
+  .carosel .carosel-content .carosel-background-logoSete,
+  .carosel .carosel-content .carosel-background-logoOito {
+    grid-column: 2;
+    grid-column: 2/4;
+  }
+  .carosel .carosel-content .carosel-text {
+    grid-column: 1;
+    grid-column: 2/4;
+  }
+}
+/* large screens */
+@media screen and (min-width: 900px) and (max-width: 1190px) {
+  .main-grid .main-grid-content .main-grid-content-checkbox {
+    font-size: 14px;
+    max-width: 100%;
+    gap: 15px;
+    justify-content: start;
+  }
+  .main-grid .main-grid-content .main-grid-content-planos {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 80vw;
+    height: auto;
+    padding: 15px;
+    gap: 30px;
+  }
+  .main-grid .main-grid-content .main-grid-content-planos .main-grid-planos-cardUm,
+  .main-grid .main-grid-content .main-grid-content-planos .main-grid-planos-cardDois,
+  .main-grid .main-grid-content .main-grid-content-planos .main-grid-planos-cardTres {
+    place-content: center;
+    height: auto;
+  }
+  .main-grid .main-grid-content .main-grid-content-planos .main-grid-planos-cardUm p,
+  .main-grid .main-grid-content .main-grid-content-planos .main-grid-planos-cardDois p,
+  .main-grid .main-grid-content .main-grid-content-planos .main-grid-planos-cardTres p {
+    font-size: 14px;
+  }
+  .main-grid .main-grid-content .main-grid-content-planos .main-grid-planos-cardUm .botaoAzulMenor,
+  .main-grid .main-grid-content .main-grid-content-planos .main-grid-planos-cardDois .botaoAzulMenor,
+  .main-grid .main-grid-content .main-grid-content-planos .main-grid-planos-cardTres .botaoAzulMenor {
+    padding: 10px;
+    align-items: center;
+  }
+  .main-grid .main-grid-content .main-grid-content-planos .main-grid-planos-cardUm .botaoAzulMenor p,
+  .main-grid .main-grid-content .main-grid-content-planos .main-grid-planos-cardDois .botaoAzulMenor p,
+  .main-grid .main-grid-content .main-grid-content-planos .main-grid-planos-cardTres .botaoAzulMenor p {
+    font-size: 13px;
+  }
+  .carosel .carosel-content {
+    grid-template-columns: repeat(4, auto);
+  }
+  .carosel .carosel-content .carosel-arrowLeft {
+    grid-column: 1;
+  }
+  .carosel .carosel-content .carosel-arrowRight {
+    grid-column: 4;
+    grid-row: 1;
+  }
+  .carosel .carosel-content .carosel-background-logoUm,
+  .carosel .carosel-content .carosel-background-logoDois,
+  .carosel .carosel-content .carosel-background-logoTres,
+  .carosel .carosel-content .carosel-background-logoQuatro,
+  .carosel .carosel-content .carosel-background-logoCinco,
+  .carosel .carosel-content .carosel-background-logoSeis,
+  .carosel .carosel-content .carosel-background-logoSete,
+  .carosel .carosel-content .carosel-background-logoOito {
+    grid-column: 2;
+    grid-column: 2/4;
+  }
+  .carosel .carosel-content .carosel-text {
+    grid-column: 1;
+    grid-column: 2/4;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

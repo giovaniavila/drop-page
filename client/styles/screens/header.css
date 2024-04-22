@@ -1,0 +1,40 @@
+/* medium screen devices */
+@media (max-width: 900px) {
+  .header-grid-conteudo {
+    height: 600px;
+  }
+}
+/* small screen devices*/
+@media (max-width: 576px) {
+  .header-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .header-grid .header-grid-conteudo {
+    height: 500px;
+  }
+  .header-grid .header-grid-conteudo h1 {
+    font-size: 30px;
+  }
+  .header-grid .header-grid-conteudo p {
+    font-size: 15px;
+  }
+  .header-grid .header-grid-botaoGratuito {
+    font-size: 12px;
+    padding: 10px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+  .header-footer h2 {
+    font-size: 24px;
+  }
+  .header-footer p {
+    font-size: 13px;
+  }
+  .header-footer .header-footer-content {
+    width: 90%;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */

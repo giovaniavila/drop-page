@@ -1,4 +1,8 @@
 @import url(./layout/header.css);
+/* responsive imports */
+@import url(./screens/footer.scss);
+@import url(./screens/header.scss);
+@import url(./screens/main.scss);
 :root {
   --cor-destaque: #3984ff;
   --cor-botao-comecar: #005ef7;
