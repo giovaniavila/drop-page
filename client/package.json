@@ -1,0 +1,6 @@
+{
+    "scripts": {
+      "build": "sass scss/styles.scss styles.css && babel js/scripts.js -o public/scripts.js"
+    }
+  }
+  
