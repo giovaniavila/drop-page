@@ -3,6 +3,7 @@
         "build": "sass scss/index.scss index.css && babel js/scripts.js -o public/scripts.js"
     },
     "devDependencies": {
+        "@babel/cli": "^7.24.5",
         "sass": "^1.77.0"
     }
 }
